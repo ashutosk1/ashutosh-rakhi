@@ -362,20 +362,6 @@ figure { margin: 0; }
   background: url("assets/gen/baraat-strip.png") repeat-x 0 0 / auto 100%;
 }
 
-/* --------------------------------- save the date ------------------------------ */
-
-.save-date { text-align: center; }
-.save-date-label {
-  display: block; margin-top: 1.2rem;
-  font-size: 1.05rem; letter-spacing: 0.08em; color: var(--ink-soft);
-}
-.save-date-hi {
-  display: block; margin: 0.1rem 0 0.2rem;
-  font-size: clamp(1.6rem, 8vw, 2.2rem); line-height: 1.3;
-  color: var(--sindoor); white-space: nowrap;
-}
-
-
 /* ------------------------------------ venues ---------------------------------- */
 
 .venues-grid { display: grid; gap: 1.4rem; }

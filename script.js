@@ -23,7 +23,6 @@ const CONFIG = {
 
   dateRangeEn: "30 November – 3 December 2026",
   dateRangeHi: "३० नवम्बर – ३ दिसम्बर २०२६",
-  vivaahDateHi: "३ दिसम्बर २०२६",
 
   invocationHi:
     "वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ। निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा।।",
@@ -189,8 +188,6 @@ function populateContent() {
   fillText('[data-bind="baraatTo"]', toVenue.nameEn);
   fillText('[data-bind="baraatDate"]', formatDateLong(CONFIG.baraat.date));
 
-  // Save the date
-  fillText('[data-bind="saveDateHi"]', CONFIG.vivaahDateHi);
 
   // Venues
   CONFIG.venues.forEach((v) => {
