@@ -83,6 +83,7 @@
 </h2>
 
 <!-- ============================== CEREMONIES ============================== -->
+<div class="ceremonies">
 <article class="panel ceremony reveal" data-panel="tilak" style="--accent: var(--turmeric-deep);">
   <figure class="tile">
     <img src="assets/gen/kalash.png" width="202" height="227" loading="lazy"
@@ -96,12 +97,10 @@
     <div class="ceremony-meta">
       <span class="date-badge" data-bind="date"></span>
     </div>
-    <p class="desc" data-bind="descriptionEn"></p>
-    <p class="desc hi" lang="hi" data-bind="descriptionHi"></p>
   </div>
 </article>
 
-<article class="panel ceremony flip reveal" data-panel="mandap" style="--accent: var(--leaf);">
+<article class="panel ceremony reveal" data-panel="mandap" style="--accent: var(--leaf);">
   <figure class="tile">
     <img src="assets/gen/bamboo.png" width="173" height="266" loading="lazy"
          alt="A grove of bamboo and banana leaves, from which the wedding mandap is built" />
@@ -114,8 +113,6 @@
     <div class="ceremony-meta">
       <span class="date-badge" data-bind="date"></span>
     </div>
-    <p class="desc" data-bind="descriptionEn"></p>
-    <p class="desc hi" lang="hi" data-bind="descriptionHi"></p>
   </div>
 </article>
 
@@ -132,26 +129,25 @@
     <div class="ceremony-meta">
       <span class="date-badge" data-bind="date"></span>
     </div>
-    <p class="desc" data-bind="descriptionEn"></p>
-    <p class="desc hi" lang="hi" data-bind="descriptionHi"></p>
   </div>
 </article>
 
-<article class="panel ceremony vivaah reveal" data-panel="vivaah" style="--accent: var(--sindoor);">
-  <header class="ceremony-head">
-    <span class="name-hi hi-display" lang="hi" data-bind="nameHi"></span>
-    <span class="name-en" data-bind="nameEn"></span>
-  </header>
-  <div class="ceremony-meta">
-    <span class="date-badge" data-bind="date"></span>
-  </div>
-  <figure class="tile tile-varmala">
+<article class="panel ceremony reveal" data-panel="vivaah" style="--accent: var(--sindoor);">
+  <figure class="tile">
     <img src="assets/gen/varmala.png" width="450" height="720" loading="lazy"
          alt="The Jaimala: bride and groom exchanging flower garlands inside a floral medallion, with Ganesh above and fish and a kalash below" />
   </figure>
-  <p class="desc" data-bind="descriptionEn"></p>
-  <p class="desc hi" lang="hi" data-bind="descriptionHi"></p>
+  <div class="ceremony-body">
+    <header class="ceremony-head">
+      <span class="name-hi hi-display" lang="hi" data-bind="nameHi"></span>
+      <span class="name-en" data-bind="nameEn"></span>
+    </header>
+    <div class="ceremony-meta">
+      <span class="date-badge" data-bind="date"></span>
+    </div>
+  </div>
 </article>
+</div>
 
 <!-- ============================== BARAAT ============================== -->
 <section class="baraat-band" aria-labelledby="baraat-heading">

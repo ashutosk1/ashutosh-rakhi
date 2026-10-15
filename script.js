@@ -51,11 +51,6 @@ const CONFIG = {
       nameEn: "Tilakotsava",
       date: "2026-11-30",
       venueId: "priyadarshika",
-      descriptionEn:
-        "The families formally bless the match: elders mark the groom's forehead with tilak and offer gifts and sweets, opening the wedding festivities with warmth and good wishes.",
-      descriptionHi:
-        "परिवारों द्वारा विवाह की स्वीकृति का शुभ क्षण — बड़े आशुतोष को तिलक लगाकर आशीर्वाद देते हैं और मिष्ठान्न व उपहारों के साथ उत्सव का शुभारंभ करते हैं।",
-      artCredit: "Original Bharni-style border in the spirit of Sita Devi and Jagdamba Devi",
     },
     {
       id: "mandap",
@@ -64,11 +59,6 @@ const CONFIG = {
       nameEn: "Mandap Aachhadan",
       date: "2026-12-01",
       venueId: "priyadarshika",
-      descriptionEn:
-        "The wedding canopy is raised and dressed at the groom's home, with the women of the family singing traditional songs as the house is made ready for the celebrations ahead.",
-      descriptionHi:
-        "घर में विवाह मंडप की स्थापना व सजावट — परिवार की महिलाएं मंगल गीत गाती हैं और घर को आगामी उत्सव के लिए सजाया जाता है।",
-      artCredit: "Original Kachni-style border in the spirit of Ganga Devi and Godavari Dutt",
     },
     {
       id: "ghritdhari",
@@ -77,11 +67,6 @@ const CONFIG = {
       nameEn: "Ghritdhari",
       date: "2026-12-02",
       venueId: "priyadarshika",
-      descriptionEn:
-        "A pre-wedding rite of offering ghee, invoking purity and blessings for the couple as the household turns its full attention toward the Vivaah.",
-      descriptionHi:
-        "विवाह से पूर्व घृत (घी) चढ़ाने की रीति — वर-वधू के लिए शुद्धता और मंगल आशीर्वाद का आह्वान किया जाता है।",
-      artCredit: "Original composition in the spirit of the Godna (tattoo) tradition",
     },
     {
       id: "vivaah",
@@ -90,11 +75,6 @@ const CONFIG = {
       nameEn: "Vivaah",
       date: "2026-12-03",
       venueId: "both",
-      descriptionEn:
-        "The wedding itself — sacred vows exchanged before the holy fire, uniting Ashutosh and Rakhi. The Baraat, the groom's processional party, sets out from Priyadarshika for Hotel Kapson, Begusarai.",
-      descriptionHi:
-        "विवाह का शुभ मुहूर्त — पवित्र अग्नि के समक्ष आशुतोष और राखी परिणय सूत्र में बंधेंगे। प्रियदर्शिका से बारात होटल कैप्सन, बेगूसराय के लिए प्रस्थान करेगी।",
-      artCredit: "Original Kohbar-style border in the spirit of Baua Devi and Mahasundari Devi",
     },
   ],
 
@@ -197,13 +177,9 @@ function populateContent() {
     const nameHi = panel.querySelector('[data-bind="nameHi"]');
     const nameEn = panel.querySelector('[data-bind="nameEn"]');
     const date = panel.querySelector('[data-bind="date"]');
-    const desc = panel.querySelector('[data-bind="descriptionEn"]');
-    const descHi = panel.querySelector('[data-bind="descriptionHi"]');
     if (nameHi) nameHi.textContent = c.nameHi;
     if (nameEn) nameEn.textContent = c.nameEn;
     if (date) date.textContent = formatDateLong(c.date);
-    if (desc) desc.textContent = c.descriptionEn;
-    if (descHi) descHi.textContent = c.descriptionHi;
   });
 
   // Baraat band
